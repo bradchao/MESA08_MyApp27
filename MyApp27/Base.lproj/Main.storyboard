@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp27" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Czl-IH-W9x">
+                                <rect key="frame" x="43" y="51" width="106" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdv-oW-axe">
+                                        <rect key="frame" x="61" y="56" width="19" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57q-rC-Kwg">
+                                <rect key="frame" x="191" y="184" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TPw-z9-2fX" appends="YES" id="afN-MU-jjZ"/>
+                                </connections>
+                            </label>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="sEH-6J-4gL">
+                                <rect key="frame" x="43" y="162" width="89" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="55l-nC-vhH" appends="YES" id="Tbc-R9-CRt"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTz-99-G6B">
+                                <rect key="frame" x="31" y="312" width="101" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ChI-OL-Dx0" appends="YES" id="nYe-8N-Fuk"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FvJ-BS-Yzq">
+                                <rect key="frame" x="300" y="478" width="32" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="xn1-8M-v8b">
+                                <rect key="frame" x="16" y="399" width="64" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HcD-wp-zi7" appends="YES" id="Zbc-T5-fJH"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ball2View" destination="oTz-99-G6B" id="5vP-f6-RI4"/>
+                        <outlet property="ball3Image" destination="xn1-8M-v8b" id="ojJ-Uh-pDZ"/>
+                        <outlet property="ballView" destination="sEH-6J-4gL" id="uw1-bM-uwv"/>
+                        <outlet property="greenView" destination="FvJ-BS-Yzq" id="5nA-Ki-h2H"/>
+                        <outlet property="labelA" destination="57q-rC-Kwg" id="Wxf-9r-Uto"/>
+                        <outlet property="targetView" destination="Czl-IH-W9x" id="QYl-cd-am5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TPw-z9-2fX">
+                    <connections>
+                        <action selector="doPan:" destination="BYZ-38-t0r" id="pxK-N0-uaG"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="55l-nC-vhH">
+                    <connections>
+                        <action selector="doTap:" destination="BYZ-38-t0r" id="xIm-8P-p0z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ChI-OL-Dx0">
+                    <connections>
+                        <action selector="pushBall:" destination="BYZ-38-t0r" id="0Z8-yr-Aem"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HcD-wp-zi7">
+                    <connections>
+                        <action selector="doSnap:" destination="BYZ-38-t0r" id="IOg-N0-F4l"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball.png" width="64" height="64"/>
+    </resources>
+</document>
